@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivy Cherop Koech | Product Management Portfolio</title>
+  <meta name="description" content="Ivy Cherop Koech — Project Management student and aspiring Product Manager.">
+  <style>
+    :root {
+      --ink: #17151c;
+      --muted: #6f6978;
+      --accent: #6d35d9;
+      --accent2: #f1eaff;
+      --paper: #fffdfb;
+      --line: #ebe6f0;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1080px, 92%); margin: auto; }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,253,251,.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .inner {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 0;
+    }
+    .logo { font-weight: 800; letter-spacing: -.04em; }
+    .logo span { color: var(--accent); }
+    .links { display: flex; gap: 24px; font-size: 14px; }
+    .links a:hover { color: var(--accent); }
+    .hero {
+      padding: 105px 0 85px;
+      background: linear-gradient(135deg, #fffdfb 0%, #f7f1ff 100%);
+    }
+    .eyebrow {
+      display: inline-block; padding: 7px 12px; border-radius: 999px;
+      background: var(--accent2); color: var(--accent); font-size: 13px; font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(48px, 8vw, 88px); line-height: .98;
+      letter-spacing: -.065em; max-width: 850px; margin: 22px 0;
+    }
+    h1 span { color: var(--accent); }
+    .hero p { max-width: 690px; font-size: 19px; color: var(--muted); }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 13px 19px; border-radius: 12px;
+      border: 1px solid var(--ink); font-weight: 700;
+    }
+    .btn.primary { background: var(--ink); color: white; border-color: var(--ink); }
+    section { padding: 80px 0; }
+    .section-title { font-size: 36px; letter-spacing: -.045em; margin: 0 0 12px; }
+    .section-intro { color: var(--muted); max-width: 680px; margin-bottom: 34px; }
+    .about-grid, .project-grid, .skills-grid {
+      display: grid; gap: 22px;
+    }
+    .about-grid { grid-template-columns: 1.2fr .8fr; }
+    .project-grid { grid-template-columns: repeat(2, 1fr); }
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
+    .card {
+      background: white; border: 1px solid var(--line); border-radius: 20px;
+      padding: 27px; box-shadow: 0 10px 30px rgba(40, 25, 60, .04);
+    }
+    .card h3 { margin-top: 0; font-size: 20px; }
+    .card p { color: var(--muted); }
+    .tag {
+      display: inline-block; margin: 4px 5px 0 0; padding: 6px 10px;
+      background: #f7f5f8; border-radius: 999px; font-size: 13px;
+    }
+    .project-card { display: flex; flex-direction: column; min-height: 290px; }
+    .project-card .bottom { margin-top: auto; padding-top: 20px; }
+    .project-link { color: var(--accent); font-weight: 700; }
+    .timeline { border-left: 2px solid var(--line); padding-left: 25px; }
+    .timeline-item { margin-bottom: 28px; }
+    .timeline-item h3 { margin: 0 0 4px; }
+    .date { color: var(--accent); font-size: 13px; font-weight: 700; }
+    .contact {
+      background: var(--ink); color: white; border-radius: 28px; padding: 55px;
+    }
+    .contact p { color: #cfc9d6; max-width: 650px; }
+    .contact .btn { border-color: white; }
+    footer { padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 760px) {
+      .links { display: none; }
+      .about-grid, .project-grid, .skills-grid { grid-template-columns: 1fr; }
+      .hero { padding: 75px 0 65px; }
+      section { padding: 60px 0; }
+      .contact { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap inner">
+      <a class="logo" href="#">Ivy<span>.</span></a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Project Management × Product Management</span>
+      <h1>Hi, I'm Ivy.<br>I like turning <span>problems</span> into products.</h1>
+      <p>
+        I’m a Project Management student at JKUAT and a Product Management learner
+        through the Tech4Dev Women Techsters Fellowship. I’m building practical
+        skills in product discovery, user-focused thinking, strategy and prototyping.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">View my work</a>
+        <a class="btn" href="https://www.linkedin.com/in/ivy-koech-9620683a4" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <h2 class="section-title">A little about me</h2>
+        <p class="section-intro">I’m at the beginning of my product journey, learning by studying, building and trying things out.</p>
+        <div class="about-grid">
+          <div class="card">
+            <h3>Who I am</h3>
+            <p>
+              I am Ivy Cherop Koech, a motivated second-year Bachelor’s degree student
+              in Project Management at JKUAT. Alongside university, I am taking a
+              one-year Product Management course through the Tech4Dev Women Techsters
+              Fellowship.
+            </p>
+            <p>
+              I’m interested in understanding users, finding the real problem behind
+              an idea and creating simple solutions that people can actually use.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What I’m exploring</h3>
+            <span class="tag">Product Discovery</span>
+            <span class="tag">User Research</span>
+            <span class="tag">Product Strategy</span>
+            <span class="tag">Product Analytics</span>
+            <span class="tag">Technical Product Management</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">Product Management Training</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">A few things I have worked on while learning product management.</p>
+        <div class="project-grid">
+          <article class="card project-card">
+            <div>
+              <span class="eyebrow">Product Prototype</span>
+              <h3>Savings Goal Feature</h3>
+              <p>
+                A low-fidelity product prototype designed around helping users create
+                and track savings goals. I mapped the user flow and created the
+                prototype in Whimsical.
+              </p>
+            </div>
+            <div class="bottom">
+              <a class="project-link" href="https://whimsical.com/ivy422/saving-goal-feature-2k7m3XNz3Ye4KaLNrwDfxd" target="_blank">
+                View Whimsical prototype ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div>
+              <span class="eyebrow">Coming next</span>
+              <h3>More product work</h3>
+              <p>
+                I’m continuing to build small product projects and case studies as
+                I learn. This space will grow with my portfolio.
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="project-link">More projects coming soon</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Skills I'm building</h2>
+        <p class="section-intro">The areas I’m actively learning and practicing.</p>
+        <div class="skills-grid">
+          <div class="card"><h3>Product</h3><p>Product discovery, problem definition, prioritization, roadmaps and product strategy.</p></div>
+          <div class="card"><h3>Research & Data</h3><p>User research, identifying user needs, basic product analytics and data-informed thinking.</p></div>
+          <div class="card"><h3>Tools</h3><p>Whimsical and other tools for mapping ideas, user flows and product prototypes.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="wrap">
+        <h2 class="section-title">My journey</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">CURRENT</div>
+            <h3>Project Management — JKUAT</h3>
+            <p>Second-year student pursuing a Bachelor’s degree in Project Management.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2025 / 2026</div>
+            <h3>Women Techsters Fellowship — Tech4Dev</h3>
+            <p>One-year Product Management learning journey focused on developing practical product skills.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="date">PRODUCT MANAGEMENT TRAINING</div>
+            <h3>Business School — Product Management Course</h3>
+            <p>Completed a two-week Product Management course and received a Certificate of Completion, strengthening my foundation in product thinking and management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <h2 class="section-title">Let's connect.</h2>
+          <p>
+            I’m always open to learning, connecting with other people in product
+            and hearing about opportunities to grow.
+          </p>
+          <div class="buttons">
+            <a class="btn primary" style="background:white;color:#17151c;border-color:white"
+               href="https://www.linkedin.com/in/ivy-koech-9620683a4" target="_blank">Connect on LinkedIn ↗</a>
+            <a class="btn" href="mailto:ivykoech25@gmail.com">Email me ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Ivy Cherop Koech. Built while learning Product Management.</div>
+  </footer>
+</body>
+</html>
